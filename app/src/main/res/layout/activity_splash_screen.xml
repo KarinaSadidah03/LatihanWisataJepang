@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgScreenSplash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bc2"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:text="nama"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="490dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tempat"
+            android:layout_below="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="tempat"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_below="@+id/tempat"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="tempat"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"/>
+
+        <Button
+            android:id="@+id/btnDetail"
+            android:layout_below="@+id/tempat"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#BF9555"
+            android:textSize="18sp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:text="See Details"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
